@@ -38,7 +38,7 @@ RAM → zram (compressed, in RAM) → PHONE RAM over USB (encrypted) → disk sw
 Nobody has published a real measurement for the phone rows yet — [`bench/`](bench) lets you produce one.
 
 **Simulator** ([sim/](sim), sourced inputs): with recorded profiles, a USB 3 phone tier ends up **up to ~6×
-faster than eMMC swap** on repeatable workloads and **25–165× faster than HDD swap**, but **no faster than
+faster than eMMC swap** on repeatable workloads and **30–165× faster than HDD swap**, but **no faster than
 eMMC without prefetching**, and much slower than NVMe.
 
 **Real kernel** ([tests/RESULTS.md](tests/RESULTS.md)): Linux 6.18, 96 MB RAM limit, 192 MB working set,

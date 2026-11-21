@@ -65,7 +65,7 @@ where it can still win:
 - **Laptops with soldered 4–8 GB RAM and eMMC or HDD storage**, running workloads that repeat their access
   order (LLM weights, game level loads, pointer-heavy structures that are walked the same way each time).
 - With recorded profiles, the simulator puts a USB 3 phone tier **up to ~6× ahead of eMMC swap** on those
-  workloads, and **25–165× ahead of HDD swap**. On random access (databases) prefetching hurts unless gated.
+  workloads, and **30–165× ahead of HDD swap**. On random access (databases) prefetching hurts unless gated.
 - On a machine with NVMe, use zram + NVMe swap. The phone adds nothing.
 
 ## Windows
