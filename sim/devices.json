@@ -1,0 +1,12 @@
+{
+  "_note": "Per-4KB-page latency as lognormal(median, p99) in microseconds. 'measured' = from a published benchmark (see sources); 'derived' = inferred from measured neighbours; 'estimate' = general knowledge.",
+  "devices": {
+    "zram":           {"read_us": [3, 20],      "write_us": [6, 30],      "bw_MBps": 3000, "channels": 8,  "basis": "derived", "source": "LZ4 >= 3 GB/s → ~1 µs/page + fault handling; no trustworthy direct measurement"},
+    "emmc":           {"read_us": [414, 2500],  "write_us": [700, 6000],  "bw_MBps": 150,  "channels": 4,  "basis": "measured (read median)", "source": "SanDisk DF4032 CDM 4K read 9.9 MB/s → 414 µs — notebookcheck.net/SanDisk-DF4032-Benchmarked.703684.0.html; p99 and writes estimated"},
+    "nvme":           {"read_us": [83, 200],    "write_us": [25, 200],    "bw_MBps": 2000, "channels": 32, "basis": "measured (read median)", "source": "Samsung 970 EVO Plus RND4K Q1T1 49.5 MB/s → 83 µs — ssd-tester.com/samsung_970_evo_plus_1tb.html"},
+    "hdd":            {"read_us": [8000, 25000],"write_us": [6000, 20000],"bw_MBps": 120,  "channels": 1,  "basis": "estimate", "source": "7200/5400 rpm seek + rotation"},
+    "phone_usb2":     {"read_us": [1000, 5000], "write_us": [1000, 5000], "bw_MBps": 35,   "channels": 8,  "basis": "derived", "source": "Android USB tether ping 0.5–1 ms (Tom's HW forum, audio-share#16) + 4 KB at 35 MB/s + TCP/userspace"},
+    "phone_usb3":     {"read_us": [550, 2500],  "write_us": [550, 2500],  "bw_MBps": 250,  "channels": 16, "basis": "derived", "source": "NCM gadget >2 Gbps (lore.kernel.org 2020-09); stack and phone wakeups dominate latency"},
+    "phone_usb3_ffs": {"read_us": [220, 1000],  "write_us": [220, 1000],  "bw_MBps": 300,  "channels": 16, "basis": "derived", "source": "USRP B210 USB3 min RTT 160 µs; Samsung T7 RND4K Q1T1 → 190 µs; FX3 200–600 µs; xHCI IMOD 40 µs"}
+  }
+}

@@ -1,0 +1,1887 @@
+{
+ "params": {
+  "ram_pages": 4096,
+  "zram_pages": 4096,
+  "zram_ratio": 2.5,
+  "pf_window": 48,
+  "pf_inflight": 64,
+  "accesses": 200000,
+  "compute_us": 2.0
+ },
+ "matrix": {
+  "llm": {
+   "emmc_swap": {
+    "slowdown": 290.897,
+    "stall_ms": 115958.9,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 191000,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 195904,
+    "disk_reads": 191000,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+emmc": {
+    "slowdown": 289.182,
+    "stall_ms": 115272.7,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 191000,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 193446,
+    "disk_reads": 191000,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb2": {
+    "slowdown": 609.642,
+    "stall_ms": 243456.9,
+    "faults": {
+     "zram": 0,
+     "far": 191000,
+     "disk": 0,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 193446,
+    "disk_reads": 0,
+    "far_reads": 191000,
+    "far_writes": 193446,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3": {
+    "slowdown": 326.13,
+    "stall_ms": 130052.1,
+    "faults": {
+     "zram": 0,
+     "far": 191000,
+     "disk": 0,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 193446,
+    "disk_reads": 0,
+    "far_reads": 191000,
+    "far_writes": 193446,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3_ffs": {
+    "slowdown": 131.046,
+    "stall_ms": 52018.3,
+    "faults": {
+     "zram": 0,
+     "far": 191000,
+     "disk": 0,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 193446,
+    "disk_reads": 0,
+    "far_reads": 191000,
+    "far_writes": 193446,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+readahead": {
+    "slowdown": 128.309,
+    "stall_ms": 50923.4,
+    "faults": {
+     "zram": 0,
+     "far": 23875,
+     "disk": 0,
+     "inflight_hit": 61426
+    },
+    "prefetch_issued": 167125,
+    "prefetch_accuracy": 1.0,
+    "disk_writes": 193446,
+    "disk_reads": 0,
+    "far_reads": 191000,
+    "far_writes": 193446,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+stride": {
+    "slowdown": 75.971,
+    "stall_ms": 29988.5,
+    "faults": {
+     "zram": 0,
+     "far": 30283,
+     "disk": 0,
+     "inflight_hit": 9765
+    },
+    "prefetch_issued": 160745,
+    "prefetch_accuracy": 1.0,
+    "disk_writes": 193473,
+    "disk_reads": 0,
+    "far_reads": 191028,
+    "far_writes": 193473,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+emmc+profile": {
+    "slowdown": 197.227,
+    "stall_ms": 78490.8,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 3898,
+     "inflight_hit": 64087
+    },
+    "prefetch_issued": 187104,
+    "prefetch_accuracy": 1.0,
+    "disk_writes": 193448,
+    "disk_reads": 191002,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+profile": {
+    "slowdown": 46.039,
+    "stall_ms": 18015.5,
+    "faults": {
+     "zram": 0,
+     "far": 3898,
+     "disk": 0,
+     "inflight_hit": 24834
+    },
+    "prefetch_issued": 187104,
+    "prefetch_accuracy": 1.0,
+    "disk_writes": 193448,
+    "disk_reads": 0,
+    "far_reads": 191002,
+    "far_writes": 193448,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+profile+gate": {
+    "slowdown": 46.039,
+    "stall_ms": 18015.5,
+    "faults": {
+     "zram": 0,
+     "far": 3898,
+     "disk": 0,
+     "inflight_hit": 24834
+    },
+    "prefetch_issued": 187104,
+    "prefetch_accuracy": 1.0,
+    "disk_writes": 193448,
+    "disk_reads": 0,
+    "far_reads": 191002,
+    "far_writes": 193448,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "nvme_swap": {
+    "slowdown": 43.505,
+    "stall_ms": 17001.9,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 191000,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 195904,
+    "disk_reads": 191000,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+nvme": {
+    "slowdown": 43.496,
+    "stall_ms": 16998.4,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 191000,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 193446,
+    "disk_reads": 191000,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+nvme+profile": {
+    "slowdown": 3.578,
+    "stall_ms": 1031.3,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 3898,
+     "inflight_hit": 14883
+    },
+    "prefetch_issued": 187104,
+    "prefetch_accuracy": 1.0,
+    "disk_writes": 193448,
+    "disk_reads": 191002,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+nvme+profile+gate": {
+    "slowdown": 3.578,
+    "stall_ms": 1031.3,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 3898,
+     "inflight_hit": 14883
+    },
+    "prefetch_issued": 187104,
+    "prefetch_accuracy": 1.0,
+    "disk_writes": 193448,
+    "disk_reads": 191002,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "hdd_swap": {
+    "slowdown": 7661.78,
+    "stall_ms": 3064312.0,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 191000,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 195904,
+    "disk_reads": 191000,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+hdd": {
+    "slowdown": 7618.895,
+    "stall_ms": 3047157.9,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 191000,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 193446,
+    "disk_reads": 191000,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+hdd+profile+gate": {
+    "slowdown": 7620.878,
+    "stall_ms": 3047951.2,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 3898,
+     "inflight_hit": 187102
+    },
+    "prefetch_issued": 187104,
+    "prefetch_accuracy": 1.0,
+    "disk_writes": 193446,
+    "disk_reads": 191002,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+profile+gate (hdd laptop)": {
+    "slowdown": 46.039,
+    "stall_ms": 18015.5,
+    "faults": {
+     "zram": 0,
+     "far": 3898,
+     "disk": 0,
+     "inflight_hit": 24834
+    },
+    "prefetch_issued": 187104,
+    "prefetch_accuracy": 1.0,
+    "disk_writes": 193448,
+    "disk_reads": 0,
+    "far_reads": 191002,
+    "far_writes": 193448,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   }
+  },
+  "browser": {
+   "emmc_swap": {
+    "slowdown": 143.447,
+    "stall_ms": 56978.7,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 91012,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 99886,
+    "disk_reads": 91012,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+emmc": {
+    "slowdown": 97.589,
+    "stall_ms": 38635.6,
+    "faults": {
+     "zram": 50813,
+     "far": 0,
+     "disk": 61380,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 67796,
+    "disk_reads": 61380,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb2": {
+    "slowdown": 198.936,
+    "stall_ms": 79174.4,
+    "faults": {
+     "zram": 50813,
+     "far": 61380,
+     "disk": 0,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 67796,
+    "disk_reads": 0,
+    "far_reads": 61380,
+    "far_writes": 67796,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3": {
+    "slowdown": 106.38,
+    "stall_ms": 42151.9,
+    "faults": {
+     "zram": 50813,
+     "far": 61380,
+     "disk": 0,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 67796,
+    "disk_reads": 0,
+    "far_reads": 61380,
+    "far_writes": 67796,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3_ffs": {
+    "slowdown": 43.367,
+    "stall_ms": 16946.8,
+    "faults": {
+     "zram": 50813,
+     "far": 61380,
+     "disk": 0,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 67796,
+    "disk_reads": 0,
+    "far_reads": 61380,
+    "far_writes": 67796,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+readahead": {
+    "slowdown": 52.87,
+    "stall_ms": 20747.8,
+    "faults": {
+     "zram": 41003,
+     "far": 25696,
+     "disk": 0,
+     "inflight_hit": 428
+    },
+    "prefetch_issued": 103086,
+    "prefetch_accuracy": 0.536,
+    "disk_writes": 135193,
+    "disk_reads": 0,
+    "far_reads": 128782,
+    "far_writes": 135193,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+stride": {
+    "slowdown": 63.794,
+    "stall_ms": 25117.6,
+    "faults": {
+     "zram": 44424,
+     "far": 35521,
+     "disk": 0,
+     "inflight_hit": 274
+    },
+    "prefetch_issued": 67135,
+    "prefetch_accuracy": 0.585,
+    "disk_writes": 109068,
+    "disk_reads": 0,
+    "far_reads": 102656,
+    "far_writes": 109068,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+emmc+profile": {
+    "slowdown": 118.37,
+    "stall_ms": 46948.0,
+    "faults": {
+     "zram": 50028,
+     "far": 0,
+     "disk": 56126,
+     "inflight_hit": 41
+    },
+    "prefetch_issued": 28616,
+    "prefetch_accuracy": 0.508,
+    "disk_writes": 91158,
+    "disk_reads": 84742,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+profile": {
+    "slowdown": 83.436,
+    "stall_ms": 32974.5,
+    "faults": {
+     "zram": 49081,
+     "far": 15937,
+     "disk": 0,
+     "inflight_hit": 529
+    },
+    "prefetch_issued": 309713,
+    "prefetch_accuracy": 0.235,
+    "disk_writes": 332057,
+    "disk_reads": 0,
+    "far_reads": 325650,
+    "far_writes": 332057,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+profile+gate": {
+    "slowdown": 101.587,
+    "stall_ms": 40234.7,
+    "faults": {
+     "zram": 49576,
+     "far": 55521,
+     "disk": 0,
+     "inflight_hit": 68
+    },
+    "prefetch_issued": 30802,
+    "prefetch_accuracy": 0.523,
+    "disk_writes": 92739,
+    "disk_reads": 0,
+    "far_reads": 86323,
+    "far_writes": 92739,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "nvme_swap": {
+    "slowdown": 21.293,
+    "stall_ms": 8117.1,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 91012,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 99886,
+    "disk_reads": 91012,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+nvme": {
+    "slowdown": 15.079,
+    "stall_ms": 5631.4,
+    "faults": {
+     "zram": 50813,
+     "far": 0,
+     "disk": 61380,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 67796,
+    "disk_reads": 61380,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+nvme+profile": {
+    "slowdown": 6.422,
+    "stall_ms": 2168.7,
+    "faults": {
+     "zram": 51714,
+     "far": 0,
+     "disk": 15823,
+     "inflight_hit": 546
+    },
+    "prefetch_issued": 327817,
+    "prefetch_accuracy": 0.221,
+    "disk_writes": 350032,
+    "disk_reads": 343640,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+nvme+profile+gate": {
+    "slowdown": 14.14,
+    "stall_ms": 5255.9,
+    "faults": {
+     "zram": 50153,
+     "far": 0,
+     "disk": 56761,
+     "inflight_hit": 55
+    },
+    "prefetch_issued": 28435,
+    "prefetch_accuracy": 0.5,
+    "disk_writes": 91612,
+    "disk_reads": 85196,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "hdd_swap": {
+    "slowdown": 3766.835,
+    "stall_ms": 1506333.9,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 91012,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 99886,
+    "disk_reads": 91012,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+hdd": {
+    "slowdown": 2547.037,
+    "stall_ms": 1018414.9,
+    "faults": {
+     "zram": 50813,
+     "far": 0,
+     "disk": 61380,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 67796,
+    "disk_reads": 61380,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+hdd+profile+gate": {
+    "slowdown": 3472.658,
+    "stall_ms": 1388663.1,
+    "faults": {
+     "zram": 49962,
+     "far": 0,
+     "disk": 56183,
+     "inflight_hit": 43
+    },
+    "prefetch_issued": 28497,
+    "prefetch_accuracy": 0.51,
+    "disk_writes": 91096,
+    "disk_reads": 84680,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+profile+gate (hdd laptop)": {
+    "slowdown": 101.587,
+    "stall_ms": 40234.7,
+    "faults": {
+     "zram": 49576,
+     "far": 55521,
+     "disk": 0,
+     "inflight_hit": 68
+    },
+    "prefetch_issued": 30802,
+    "prefetch_accuracy": 0.523,
+    "disk_writes": 92739,
+    "disk_reads": 0,
+    "far_reads": 86323,
+    "far_writes": 92739,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   }
+  },
+  "game": {
+   "emmc_swap": {
+    "slowdown": 101.716,
+    "stall_ms": 40286.6,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 62302,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 73206,
+    "disk_reads": 62302,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+emmc": {
+    "slowdown": 77.758,
+    "stall_ms": 30703.3,
+    "faults": {
+     "zram": 31830,
+     "far": 0,
+     "disk": 47315,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 55761,
+    "disk_reads": 47315,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb2": {
+    "slowdown": 154.07,
+    "stall_ms": 61227.8,
+    "faults": {
+     "zram": 31830,
+     "far": 47315,
+     "disk": 0,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 55761,
+    "disk_reads": 0,
+    "far_reads": 47315,
+    "far_writes": 55761,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3": {
+    "slowdown": 81.966,
+    "stall_ms": 32386.5,
+    "faults": {
+     "zram": 31830,
+     "far": 47315,
+     "disk": 0,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 55761,
+    "disk_reads": 0,
+    "far_reads": 47315,
+    "far_writes": 55761,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3_ffs": {
+    "slowdown": 33.444,
+    "stall_ms": 12977.6,
+    "faults": {
+     "zram": 31830,
+     "far": 47315,
+     "disk": 0,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 55761,
+    "disk_reads": 0,
+    "far_reads": 47315,
+    "far_writes": 55761,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+readahead": {
+    "slowdown": 24.115,
+    "stall_ms": 9245.9,
+    "faults": {
+     "zram": 32084,
+     "far": 11367,
+     "disk": 0,
+     "inflight_hit": 120
+    },
+    "prefetch_issued": 36632,
+    "prefetch_accuracy": 0.978,
+    "disk_writes": 56444,
+    "disk_reads": 0,
+    "far_reads": 47999,
+    "far_writes": 56444,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+stride": {
+    "slowdown": 33.69,
+    "stall_ms": 13076.1,
+    "faults": {
+     "zram": 32180,
+     "far": 18371,
+     "disk": 0,
+     "inflight_hit": 69
+    },
+    "prefetch_issued": 29427,
+    "prefetch_accuracy": 0.98,
+    "disk_writes": 56244,
+    "disk_reads": 0,
+    "far_reads": 47798,
+    "far_writes": 56244,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+emmc+profile": {
+    "slowdown": 70.248,
+    "stall_ms": 27699.2,
+    "faults": {
+     "zram": 31645,
+     "far": 0,
+     "disk": 30853,
+     "inflight_hit": 7
+    },
+    "prefetch_issued": 16941,
+    "prefetch_accuracy": 0.983,
+    "disk_writes": 56240,
+    "disk_reads": 47794,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+profile": {
+    "slowdown": 15.147,
+    "stall_ms": 5658.8,
+    "faults": {
+     "zram": 32663,
+     "far": 3272,
+     "disk": 0,
+     "inflight_hit": 131
+    },
+    "prefetch_issued": 44949,
+    "prefetch_accuracy": 0.961,
+    "disk_writes": 56667,
+    "disk_reads": 0,
+    "far_reads": 48221,
+    "far_writes": 56667,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+profile+gate": {
+    "slowdown": 57.007,
+    "stall_ms": 22402.7,
+    "faults": {
+     "zram": 31643,
+     "far": 30700,
+     "disk": 0,
+     "inflight_hit": 9
+    },
+    "prefetch_issued": 17091,
+    "prefetch_accuracy": 0.983,
+    "disk_writes": 56237,
+    "disk_reads": 0,
+    "far_reads": 47791,
+    "far_writes": 56237,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "nvme_swap": {
+    "slowdown": 14.871,
+    "stall_ms": 5548.5,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 62302,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 73206,
+    "disk_reads": 62302,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+nvme": {
+    "slowdown": 11.789,
+    "stall_ms": 4315.6,
+    "faults": {
+     "zram": 31830,
+     "far": 0,
+     "disk": 47315,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 55761,
+    "disk_reads": 47315,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+nvme+profile": {
+    "slowdown": 2.229,
+    "stall_ms": 491.5,
+    "faults": {
+     "zram": 31028,
+     "far": 0,
+     "disk": 3210,
+     "inflight_hit": 96
+    },
+    "prefetch_issued": 46746,
+    "prefetch_accuracy": 0.961,
+    "disk_writes": 58402,
+    "disk_reads": 49956,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+nvme+profile+gate": {
+    "slowdown": 8.358,
+    "stall_ms": 2943.3,
+    "faults": {
+     "zram": 31264,
+     "far": 0,
+     "disk": 31339,
+     "inflight_hit": 6
+    },
+    "prefetch_issued": 16852,
+    "prefetch_accuracy": 0.982,
+    "disk_writes": 56637,
+    "disk_reads": 48191,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "hdd_swap": {
+    "slowdown": 2660.532,
+    "stall_ms": 1063812.6,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 62302,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 73206,
+    "disk_reads": 62302,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+hdd": {
+    "slowdown": 2023.5,
+    "stall_ms": 808999.9,
+    "faults": {
+     "zram": 31830,
+     "far": 0,
+     "disk": 47315,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 55761,
+    "disk_reads": 47315,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+hdd+profile+gate": {
+    "slowdown": 2046.009,
+    "stall_ms": 818003.7,
+    "faults": {
+     "zram": 31572,
+     "far": 0,
+     "disk": 30872,
+     "inflight_hit": 8
+    },
+    "prefetch_issued": 16990,
+    "prefetch_accuracy": 0.983,
+    "disk_writes": 56308,
+    "disk_reads": 47862,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+profile+gate (hdd laptop)": {
+    "slowdown": 57.007,
+    "stall_ms": 22402.7,
+    "faults": {
+     "zram": 31643,
+     "far": 30700,
+     "disk": 0,
+     "inflight_hit": 9
+    },
+    "prefetch_issued": 17091,
+    "prefetch_accuracy": 0.983,
+    "disk_writes": 56237,
+    "disk_reads": 0,
+    "far_reads": 47791,
+    "far_writes": 56237,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   }
+  },
+  "database": {
+   "emmc_swap": {
+    "slowdown": 189.934,
+    "stall_ms": 75573.7,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 122452,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 130856,
+    "disk_reads": 122452,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+emmc": {
+    "slowdown": 131.73,
+    "stall_ms": 52292.0,
+    "faults": {
+     "zram": 63644,
+     "far": 0,
+     "disk": 84568,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 90514,
+    "disk_reads": 84568,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb2": {
+    "slowdown": 271.555,
+    "stall_ms": 108222.1,
+    "faults": {
+     "zram": 63644,
+     "far": 84568,
+     "disk": 0,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 90514,
+    "disk_reads": 0,
+    "far_reads": 84568,
+    "far_writes": 90514,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3": {
+    "slowdown": 145.558,
+    "stall_ms": 57823.3,
+    "faults": {
+     "zram": 63644,
+     "far": 84568,
+     "disk": 0,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 90514,
+    "disk_reads": 0,
+    "far_reads": 84568,
+    "far_writes": 90514,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3_ffs": {
+    "slowdown": 59.102,
+    "stall_ms": 23240.8,
+    "faults": {
+     "zram": 63644,
+     "far": 84568,
+     "disk": 0,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 90514,
+    "disk_reads": 0,
+    "far_reads": 84568,
+    "far_writes": 90514,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+readahead": {
+    "slowdown": 194.587,
+    "stall_ms": 77434.9,
+    "faults": {
+     "zram": 63857,
+     "far": 84398,
+     "disk": 0,
+     "inflight_hit": 123
+    },
+    "prefetch_issued": 507706,
+    "prefetch_accuracy": 0.066,
+    "disk_writes": 598039,
+    "disk_reads": 0,
+    "far_reads": 592104,
+    "far_writes": 598039,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+stride": {
+    "slowdown": 148.327,
+    "stall_ms": 58930.7,
+    "faults": {
+     "zram": 63569,
+     "far": 84647,
+     "disk": 0,
+     "inflight_hit": 43
+    },
+    "prefetch_issued": 218183,
+    "prefetch_accuracy": 0.137,
+    "disk_writes": 308768,
+    "disk_reads": 0,
+    "far_reads": 302830,
+    "far_writes": 308768,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+emmc+profile": {
+    "slowdown": 162.648,
+    "stall_ms": 64659.0,
+    "faults": {
+     "zram": 63618,
+     "far": 0,
+     "disk": 84578,
+     "inflight_hit": 5
+    },
+    "prefetch_issued": 30430,
+    "prefetch_accuracy": 0.438,
+    "disk_writes": 120954,
+    "disk_reads": 115008,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+profile": {
+    "slowdown": 565.348,
+    "stall_ms": 225739.2,
+    "faults": {
+     "zram": 63547,
+     "far": 84292,
+     "disk": 0,
+     "inflight_hit": 386
+    },
+    "prefetch_issued": 2257217,
+    "prefetch_accuracy": 0.016,
+    "disk_writes": 2347408,
+    "disk_reads": 0,
+    "far_reads": 2341509,
+    "far_writes": 2347408,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+profile+gate": {
+    "slowdown": 151.153,
+    "stall_ms": 60061.2,
+    "faults": {
+     "zram": 63622,
+     "far": 84582,
+     "disk": 0,
+     "inflight_hit": 6
+    },
+    "prefetch_issued": 30360,
+    "prefetch_accuracy": 0.437,
+    "disk_writes": 120888,
+    "disk_reads": 0,
+    "far_reads": 114942,
+    "far_writes": 120888,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "nvme_swap": {
+    "slowdown": 28.292,
+    "stall_ms": 10917.0,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 122452,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 130856,
+    "disk_reads": 122452,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+nvme": {
+    "slowdown": 20.328,
+    "stall_ms": 7731.3,
+    "faults": {
+     "zram": 63644,
+     "far": 0,
+     "disk": 84568,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 90514,
+    "disk_reads": 84568,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+nvme+profile": {
+    "slowdown": 36.084,
+    "stall_ms": 14033.7,
+    "faults": {
+     "zram": 63378,
+     "far": 0,
+     "disk": 84504,
+     "inflight_hit": 396
+    },
+    "prefetch_issued": 2252897,
+    "prefetch_accuracy": 0.016,
+    "disk_writes": 2343291,
+    "disk_reads": 2337401,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+nvme+profile+gate": {
+    "slowdown": 20.508,
+    "stall_ms": 7803.1,
+    "faults": {
+     "zram": 63703,
+     "far": 0,
+     "disk": 84446,
+     "inflight_hit": 5
+    },
+    "prefetch_issued": 30488,
+    "prefetch_accuracy": 0.439,
+    "disk_writes": 120880,
+    "disk_reads": 114934,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "hdd_swap": {
+    "slowdown": 5006.737,
+    "stall_ms": 2002295.0,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 122452,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 130856,
+    "disk_reads": 122452,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+hdd": {
+    "slowdown": 3460.416,
+    "stall_ms": 1383766.4,
+    "faults": {
+     "zram": 63644,
+     "far": 0,
+     "disk": 84568,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 90514,
+    "disk_reads": 84568,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+hdd+profile+gate": {
+    "slowdown": 4667.387,
+    "stall_ms": 1866554.9,
+    "faults": {
+     "zram": 63601,
+     "far": 0,
+     "disk": 84615,
+     "inflight_hit": 4
+    },
+    "prefetch_issued": 30347,
+    "prefetch_accuracy": 0.438,
+    "disk_writes": 120908,
+    "disk_reads": 114962,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+profile+gate (hdd laptop)": {
+    "slowdown": 151.153,
+    "stall_ms": 60061.2,
+    "faults": {
+     "zram": 63622,
+     "far": 84582,
+     "disk": 0,
+     "inflight_hit": 6
+    },
+    "prefetch_issued": 30360,
+    "prefetch_accuracy": 0.437,
+    "disk_writes": 120888,
+    "disk_reads": 0,
+    "far_reads": 114942,
+    "far_writes": 120888,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   }
+  },
+  "pointer_chase": {
+   "emmc_swap": {
+    "slowdown": 290.943,
+    "stall_ms": 115977.0,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 191062,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 195904,
+    "disk_reads": 191062,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+emmc": {
+    "slowdown": 289.24,
+    "stall_ms": 115295.8,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 191062,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 193446,
+    "disk_reads": 191062,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb2": {
+    "slowdown": 609.821,
+    "stall_ms": 243528.5,
+    "faults": {
+     "zram": 0,
+     "far": 191062,
+     "disk": 0,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 193446,
+    "disk_reads": 0,
+    "far_reads": 191062,
+    "far_writes": 193446,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3": {
+    "slowdown": 326.232,
+    "stall_ms": 130092.6,
+    "faults": {
+     "zram": 0,
+     "far": 191062,
+     "disk": 0,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 193446,
+    "disk_reads": 0,
+    "far_reads": 191062,
+    "far_writes": 193446,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3_ffs": {
+    "slowdown": 131.086,
+    "stall_ms": 52034.5,
+    "faults": {
+     "zram": 0,
+     "far": 191062,
+     "disk": 0,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 193446,
+    "disk_reads": 0,
+    "far_reads": 191062,
+    "far_writes": 193446,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+readahead": {
+    "slowdown": 147.235,
+    "stall_ms": 58494.1,
+    "faults": {
+     "zram": 60697,
+     "far": 81265,
+     "disk": 0,
+     "inflight_hit": 127
+    },
+    "prefetch_issued": 243893,
+    "prefetch_accuracy": 0.201,
+    "disk_writes": 327535,
+    "disk_reads": 0,
+    "far_reads": 325158,
+    "far_writes": 327535,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+stride": {
+    "slowdown": 144.883,
+    "stall_ms": 57553.4,
+    "faults": {
+     "zram": 58499,
+     "far": 84158,
+     "disk": 0,
+     "inflight_hit": 20
+    },
+    "prefetch_issued": 107886,
+    "prefetch_accuracy": 0.449,
+    "disk_writes": 194428,
+    "disk_reads": 0,
+    "far_reads": 192044,
+    "far_writes": 194428,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+emmc+profile": {
+    "slowdown": 197.508,
+    "stall_ms": 78603.1,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 3900,
+     "inflight_hit": 64252
+    },
+    "prefetch_issued": 187200,
+    "prefetch_accuracy": 1.0,
+    "disk_writes": 193446,
+    "disk_reads": 191100,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+profile": {
+    "slowdown": 46.203,
+    "stall_ms": 18081.4,
+    "faults": {
+     "zram": 0,
+     "far": 3900,
+     "disk": 0,
+     "inflight_hit": 24855
+    },
+    "prefetch_issued": 187200,
+    "prefetch_accuracy": 1.0,
+    "disk_writes": 193482,
+    "disk_reads": 0,
+    "far_reads": 191100,
+    "far_writes": 193482,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+profile+gate": {
+    "slowdown": 46.203,
+    "stall_ms": 18081.4,
+    "faults": {
+     "zram": 0,
+     "far": 3900,
+     "disk": 0,
+     "inflight_hit": 24855
+    },
+    "prefetch_issued": 187200,
+    "prefetch_accuracy": 1.0,
+    "disk_writes": 193482,
+    "disk_reads": 0,
+    "far_reads": 191100,
+    "far_writes": 193482,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "nvme_swap": {
+    "slowdown": 43.519,
+    "stall_ms": 17007.4,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 191062,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 195904,
+    "disk_reads": 191062,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+nvme": {
+    "slowdown": 43.51,
+    "stall_ms": 17003.9,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 191062,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 193446,
+    "disk_reads": 191062,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+nvme+profile": {
+    "slowdown": 3.571,
+    "stall_ms": 1028.4,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 3900,
+     "inflight_hit": 14884
+    },
+    "prefetch_issued": 187200,
+    "prefetch_accuracy": 1.0,
+    "disk_writes": 193470,
+    "disk_reads": 191100,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+nvme+profile+gate": {
+    "slowdown": 3.571,
+    "stall_ms": 1028.4,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 3900,
+     "inflight_hit": 14884
+    },
+    "prefetch_issued": 187200,
+    "prefetch_accuracy": 1.0,
+    "disk_writes": 193470,
+    "disk_reads": 191100,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "hdd_swap": {
+    "slowdown": 7663.182,
+    "stall_ms": 3064872.8,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 191062,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 195904,
+    "disk_reads": 191062,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+hdd": {
+    "slowdown": 7620.356,
+    "stall_ms": 3047742.2,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 191062,
+     "inflight_hit": 0
+    },
+    "prefetch_issued": 0,
+    "prefetch_accuracy": null,
+    "disk_writes": 193446,
+    "disk_reads": 191062,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+hdd+profile+gate": {
+    "slowdown": 7621.585,
+    "stall_ms": 3048233.9,
+    "faults": {
+     "zram": 0,
+     "far": 0,
+     "disk": 3900,
+     "inflight_hit": 187162
+    },
+    "prefetch_issued": 187200,
+    "prefetch_accuracy": 1.0,
+    "disk_writes": 193446,
+    "disk_reads": 191100,
+    "far_reads": 0,
+    "far_writes": 0,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   },
+   "zram+phone_usb3+profile+gate (hdd laptop)": {
+    "slowdown": 46.203,
+    "stall_ms": 18081.4,
+    "faults": {
+     "zram": 0,
+     "far": 3900,
+     "disk": 0,
+     "inflight_hit": 24855
+    },
+    "prefetch_issued": 187200,
+    "prefetch_accuracy": 1.0,
+    "disk_writes": 193482,
+    "disk_reads": 0,
+    "far_reads": 191100,
+    "far_writes": 193482,
+    "lost_pages": 0,
+    "far_demoted": false,
+    "drain_ms": null
+   }
+  }
+ },
+ "events": {
+  "unplug_no_backup": {
+   "slowdown": 246.323,
+   "stall_ms": 98129.0,
+   "faults": {
+    "zram": 49322,
+    "far": 6171,
+    "disk": 9670,
+    "inflight_hit": 499
+   },
+   "prefetch_issued": 310140,
+   "prefetch_accuracy": 0.234,
+   "disk_writes": 208029,
+   "disk_reads": 207674,
+   "far_reads": 118307,
+   "far_writes": 124358,
+   "lost_pages": 6032,
+   "far_demoted": false,
+   "drain_ms": null
+  },
+  "unplug_write_through": {
+   "slowdown": 300.224,
+   "stall_ms": 119689.4,
+   "faults": {
+    "zram": 49436,
+    "far": 6171,
+    "disk": 9697,
+    "inflight_hit": 506
+   },
+   "prefetch_issued": 311024,
+   "prefetch_accuracy": 0.233,
+   "disk_writes": 333297,
+   "disk_reads": 208585,
+   "far_reads": 118307,
+   "far_writes": 124358,
+   "lost_pages": 0,
+   "far_demoted": false,
+   "drain_ms": null
+  },
+  "revoke_write_back": {
+   "slowdown": 114.246,
+   "stall_ms": 45298.3,
+   "faults": {
+    "zram": 49837,
+    "far": 22812,
+    "disk": 32957,
+    "inflight_hit": 62
+   },
+   "prefetch_issued": 32004,
+   "prefetch_accuracy": 0.489,
+   "disk_writes": 57026,
+   "disk_reads": 50610,
+   "far_reads": 43232,
+   "far_writes": 43232,
+   "lost_pages": 0,
+   "far_demoted": false,
+   "drain_ms": 1639.2
+  },
+  "revoke_write_through": {
+   "slowdown": 110.164,
+   "stall_ms": 43665.8,
+   "faults": {
+    "zram": 49825,
+    "far": 22812,
+    "disk": 32969,
+    "inflight_hit": 66
+   },
+   "prefetch_issued": 31978,
+   "prefetch_accuracy": 0.489,
+   "disk_writes": 94175,
+   "disk_reads": 50596,
+   "far_reads": 37163,
+   "far_writes": 43232,
+   "lost_pages": 0,
+   "far_demoted": false,
+   "drain_ms": 0.0
+  },
+  "no_event_write_back": {
+   "slowdown": 101.587,
+   "stall_ms": 40234.7,
+   "faults": {
+    "zram": 49576,
+    "far": 55521,
+    "disk": 0,
+    "inflight_hit": 68
+   },
+   "prefetch_issued": 30802,
+   "prefetch_accuracy": 0.523,
+   "disk_writes": 0,
+   "disk_reads": 0,
+   "far_reads": 86323,
+   "far_writes": 92739,
+   "lost_pages": 0,
+   "far_demoted": false,
+   "drain_ms": null
+  },
+  "no_event_write_through": {
+   "slowdown": 101.587,
+   "stall_ms": 40234.7,
+   "faults": {
+    "zram": 49576,
+    "far": 55521,
+    "disk": 0,
+    "inflight_hit": 68
+   },
+   "prefetch_issued": 30802,
+   "prefetch_accuracy": 0.523,
+   "disk_writes": 92739,
+   "disk_reads": 0,
+   "far_reads": 86323,
+   "far_writes": 92739,
+   "lost_pages": 0,
+   "far_demoted": false,
+   "drain_ms": null
+  },
+  "throttle_static": {
+   "slowdown": 415.771,
+   "stall_ms": 165908.3,
+   "faults": {
+    "zram": 49153,
+    "far": 15888,
+    "disk": 0,
+    "inflight_hit": 554
+   },
+   "prefetch_issued": 309320,
+   "prefetch_accuracy": 0.235,
+   "disk_writes": 331615,
+   "disk_reads": 0,
+   "far_reads": 325208,
+   "far_writes": 331615,
+   "lost_pages": 0,
+   "far_demoted": false,
+   "drain_ms": null
+  },
+  "throttle_adaptive": {
+   "slowdown": 344.473,
+   "stall_ms": 137389.4,
+   "faults": {
+    "zram": 49543,
+    "far": 200,
+    "disk": 15587,
+    "inflight_hit": 507
+   },
+   "prefetch_issued": 312558,
+   "prefetch_accuracy": 0.232,
+   "disk_writes": 334751,
+   "disk_reads": 325399,
+   "far_reads": 2946,
+   "far_writes": 5448,
+   "lost_pages": 0,
+   "far_demoted": true,
+   "drain_ms": null
+  }
+ }
+}
